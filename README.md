@@ -49,8 +49,8 @@ pipenv run server
 
 ## Version History
 
-See CHANGELOG.md.
+See [CHANGELOG.md](https://github.com/agata-project/azazel/blob/master/CHANGELOG.md)
 
 ## License
 
-LICENCE
+[LICENCE](https://github.com/agata-project/azazel/blob/master/LICENSE)

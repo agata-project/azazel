@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
+setupdbdev = "./scripts/create_db.sh azazel postgres postgres"
+setupdbtest = "./scripts/create_db.sh azazel_test postgres postgres"
 server = "python ./manage.py runserver"
 makemigrations = "python ./manage.py makemigrations"
 migrate = "python ./manage.py migrate"
@@ -12,6 +14,8 @@ createsuperuser = "python ./manage.py createsuperuser"
 [packages]
 django = "*"
 djangorestframework = "*"
+"psycopg2" = "*"
+"psycopg2-binary" = "*"
 
 [dev-packages]
 
