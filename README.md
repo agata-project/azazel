@@ -31,9 +31,18 @@ Um webservice para o backend da semana da computação.
 
 ## Development
 
+### Initial settings
+
 ```sh
 cp env.example .env
 cd azazel
+```
+
+### Create DB
+
+```sh
+pipenv run setupdbdev
+pipenv run setupdbtest
 ```
 
 ```sh
