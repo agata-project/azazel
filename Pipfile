@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+server = "python ./manage.py runserver"
+makemigrations = "python ./manage.py makemigrations"
+migrate = "python ./manage.py migrate"
+createsuperuser = "python ./manage.py createsuperuser"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
