@@ -27,8 +27,7 @@ Um webservice para o backend da semana da computação.
 
 ### Environment Variables
 
-cp env.example .env
-and set `.env` variables
+cp .env.example .env
 
 ## Development
 
