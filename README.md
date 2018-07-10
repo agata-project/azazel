@@ -27,16 +27,9 @@ Um webservice para o backend da semana da computação.
 
 ### Environment Variables
 
-[TODO]
+cp .env.example .env
 
 ## Development
-
-### Initial settings
-
-```sh
-cp env.example .env
-cd azazel
-```
 
 ### Create DB
 
