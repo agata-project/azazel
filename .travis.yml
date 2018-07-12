@@ -1,17 +1,26 @@
 language:
-  - python3
+  - python
 
-install:
-  - sudo apt install python3-pip
-  - sudo python3 -m pip install pytest
-  - sudo python3 -m pip install python-coveralls
-  - sudo python3 -m pip install pytest-cov
+dist:
+  - trusty
 
-before_scrip:
+python:
+  - "3.6.5"
+
+before_install:
+  - |
+      if [[ -n "$PYENV_VERSION" ]]; then
+        wget https://github.com/praekeltfoundation/travis-pyenv/releases/download/0.4.0/setup-pyenv.sh
+        source setup-pyenv.sh
+      fi
+
+install: "make"
+
+before_script:
   - py.test tests/ --cov=azazel
 
 script:
-  - pytest
+  - make test
 
 after_success:
   - coveralls
