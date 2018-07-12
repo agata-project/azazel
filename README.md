@@ -1,6 +1,8 @@
 # Agata Project - Azazel
 
-[Azazel](https://img.shields.io/badge/agata--project-azazel-blue.svg?branch=master)
+![Azazel](https://img.shields.io/badge/agata--project-azazel-blue.svg?branch=master)
+
+![Travis](https://img.shields.io/travis/agata-project/azazel.svg)
 
 [![Build Status](https://travis-ci.org/agata-project/azazel.svg?branch=master)](https://travis-ci.org/agata-project/azazel)
 
