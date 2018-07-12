@@ -16,8 +16,10 @@ django = "*"
 djangorestframework = "*"
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
+pytest = "*"
 
 [dev-packages]
+"autopep8" = "*"
 
 [requires]
 python_version = "3.6"
