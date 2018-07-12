@@ -4,6 +4,10 @@ language:
 install:
   - sudo apt install python3-pip
   - sudo python3 -m pip install pytest
+  - sudo python3 -m pip install codacy-coverage
 
   script:
   - pytest
+
+  after_sucess:
+    - python-codacy-coverage -r coverage.xml
