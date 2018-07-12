@@ -6,8 +6,6 @@ install:
   - sudo python3 -m pip install pytest
   - sudo python3 -m pip install codacy-coverage
 
-  script:
+script:
   - pytest
-
-  after_sucess:
-    - python-codacy-coverage -r coverage.xml
+  - python-codacy-coverage -r coverage.xml
