@@ -1,6 +1,6 @@
 # Agata Project - Azazel
 
-[![TravisCI](https://img.shields.io/travis/agata-project/azazel.svg)](https://travis-ci.org/agata-project/azazel)
+![Travis](https://img.shields.io/travis/agata-project/azazel.svg)
 ![Coveralls github](https://img.shields.io/coveralls/github/agata-project/azazel.svg)
 
 
