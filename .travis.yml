@@ -2,6 +2,6 @@ language:
   - python3
 
 install:
-  - pip install pytest
+  - python3 -m pip install pytest
 script:
   - pytest
