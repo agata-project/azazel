@@ -4,5 +4,9 @@ language:
 install:
   - sudo apt install python3-pip
   - sudo python3 -m pip install pytest
+  - sudo python3 -m pip install coverage
 script:
   - pytest
+
+after_success:
+  - coveralls

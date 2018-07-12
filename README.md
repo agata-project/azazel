@@ -1,8 +1,10 @@
 # Agata Project - Azazel
 
 [![TravisCI](https://img.shields.io/travis/agata-project/azazel.svg)](https://travis-ci.org/agata-project/azazel)
+![Coveralls github](https://img.shields.io/coveralls/github/agata-project/azazel.svg)
 
-[![PR](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg)](https://github.com/agata-project/azazel/pulls)
+
+<!-- [![PR](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg)](https://github.com/agata-project/azazel/pulls) -->
 
 ## Description
 
