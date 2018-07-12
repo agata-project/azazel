@@ -1,11 +1,7 @@
 language:
-  - python
+  - python3
 
 install:
-  - curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-
-before_script:
-  - pipenv install
-
+  - pip install pytest
 script:
   - pytest
