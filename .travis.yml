@@ -1,17 +1,22 @@
 language:
-  - python3
+  - python
+
+python:
+  - "3.6"
+
+sudo: required
 
 install:
-  - sudo apt install python3-pip
-  - sudo python3 -m pip install pytest
-  - sudo python3 -m pip install python-coveralls
-  - sudo python3 -m pip install pytest-cov
+  - apt-get install python3-pip
+  - python3 -m pip install pytest
+  - python3 -m pip install python-coveralls
+  - python3 -m pip install pytest-cov
 
 before_scrip:
   - py.test tests/ --cov=azazel
 
 script:
-  - pytest
+  - py.test -v --cov azazel --cov-report term-missing
 
 after_success:
   - coveralls
