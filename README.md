@@ -1,5 +1,6 @@
 # Agata Project - Azazel
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/79c8fd3986fe490eaf93d615991d7bfe)](https://app.codacy.com/app/cuzikjack/azazel?utm_source=github.com&utm_medium=referral&utm_content=agata-project/azazel&utm_campaign=badger)
 [![TravisCI](https://img.shields.io/travis/agata-project/azazel.svg)](https://travis-ci.org/agata-project/azazel)
 ![Coveralls github](https://img.shields.io/coveralls/github/agata-project/azazel.svg)
 
