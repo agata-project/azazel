@@ -16,11 +16,11 @@ django = "*"
 djangorestframework = "*"
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
+
+[dev-packages]
 pytest = "*"
 python-coveralls = "*"
 pytest-cov = "*"
-
-[dev-packages]
 "autopep8" = "*"
 
 [requires]

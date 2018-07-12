@@ -14,14 +14,13 @@ before_install:
         source setup-pyenv.sh
       fi
 
-install:
-  - pipenv install
+install: "make"
 
 before_script:
   - py.test tests/ --cov=azazel
 
 script:
-  - py.test tests/ -v --cov azazel --cov-report term-missing
+  - make test
 
 after_success:
   - coveralls
