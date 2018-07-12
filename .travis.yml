@@ -6,10 +6,10 @@ python:
 
 install:
   - sudo apt-get install python3-pip
-  - sudo python3 -m pip install pytest
-  - sudo python3 -m pip install python-coveralls
-  - sudo python3 -m pip install pytest-cov
-  - sudo python3 -m pip install --upgrade setuptools
+  - sudo pip install pytest
+  - sudo pip install python-coveralls
+  - sudo pip install pytest-cov
+  - sudo pip install --upgrade setuptools
 script:
   - python --version
   - py.test tests/ --cov=azazel
