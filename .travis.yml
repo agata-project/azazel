@@ -1,4 +1,10 @@
+language:
+  - python
+
 install:
+  - pip install pyenv
+
+before_script:
   - pipenv install
 
 script:
