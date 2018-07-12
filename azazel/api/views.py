@@ -1,19 +1,59 @@
-from django.contrib.auth.models import User, Group
+from .models import Course, Event, User, Talk, Workshop, Keynote, UserTalk
 from rest_framework import viewsets
-from azazel.api.serializers import UserSerializer, GroupSerializer
+from azazel.api.serializers import EventSerializer, CourseSerializer, UserSerializer, TalkSerializer, WorkshopSerializer, KeynoteSerializer, UserTalkSerializer
+
+
+class EventViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer
+
+
+class CourseViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    API endpoint that allows groups to be viewed or edited.
     """
-    queryset = User.objects.all().order_by('-date_joined')
+    queryset = User.objects.all()
     serializer_class = UserSerializer
 
 
-class GroupViewSet(viewsets.ModelViewSet):
+class TalkViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+    queryset = Talk.objects.all()
+    serializer_class = TalkSerializer
+
+
+class WorkshopViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Workshop.objects.all()
+    serializer_class = WorkshopSerializer
+
+
+class KeynoteViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Keynote.objects.all()
+    serializer_class = KeynoteSerializer
+
+
+class UserTalkViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = UserTalk.objects.all()
+    serializer_class = UserTalkSerializer
