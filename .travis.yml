@@ -2,7 +2,7 @@ language:
   - python3
 
 install:
-  - python3 -m pip install pytest
   - sudo apt install python3-pip
+  - python3 -m pip install pytest
 script:
   - pytest
