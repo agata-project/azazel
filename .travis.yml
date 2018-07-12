@@ -9,8 +9,9 @@ install:
   - sudo python3 -m pip install pytest
   - sudo python3 -m pip install python-coveralls
   - sudo python3 -m pip install pytest-cov
-
+  - sudo python3 -m pip install --upgrade setuptools
 script:
+  - python --version
   - py.test tests/ --cov=azazel
 
 after_success:
