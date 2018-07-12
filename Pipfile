@@ -17,6 +17,8 @@ djangorestframework = "*"
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
 pytest = "*"
+python-coveralls = "*"
+pytest-cov = "*"
 
 [dev-packages]
 "autopep8" = "*"
