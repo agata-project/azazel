@@ -1,8 +1,8 @@
 # Agata Project - Azazel
 
 ![Azazel](https://img.shields.io/badge/agata--project-azazel-blue.svg)
-[![Ebert](https://ebertapp.io/github/agata-project/azazel.svg)](https://ebertapp.io/github/agata-project/azazel)
 [![TravisCi](https://travis-ci.org/agata-project/azazel.svg?branch=master)](https://travis-ci.org/agata-project/azazel)
+[![Ebert](https://ebertapp.io/github/agata-project/azazel.svg)](https://ebertapp.io/github/agata-project/azazel)
 
 ## Description
 
