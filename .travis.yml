@@ -16,7 +16,7 @@ before_scrip:
   - py.test tests/ --cov=azazel
 
 script:
-  - py.test -v --cov azazel --cov-report term-missing
+  - py.test -v --cov=azazel --cov-report=term-missing
 
 after_success:
   - coveralls
