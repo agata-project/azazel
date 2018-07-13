@@ -1,5 +1,5 @@
 from django.db import models
-from . import User
+from .user import User
 from .talk import Talk
 
 
