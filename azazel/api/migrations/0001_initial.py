@@ -8,67 +8,130 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Course',
+            name="Course",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=50)),
-                ('initials', models.CharField(max_length=5)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=50)),
+                ("initials", models.CharField(max_length=5)),
             ],
         ),
         migrations.CreateModel(
-            name='Event',
+            name="Event",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=50)),
-                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='api.Course')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=50)),
+                (
+                    "course",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="api.Course"
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='Talk',
+            name="Talk",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('speaker', models.CharField(max_length=100)),
-                ('description', models.TextField()),
-                ('local', models.TextField()),
-                ('init_time', models.DateField()),
-                ('finish_time', models.DateField()),
-                ('date', models.DateField()),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("speaker", models.CharField(max_length=100)),
+                ("description", models.TextField()),
+                ("local", models.TextField()),
+                ("init_time", models.DateField()),
+                ("finish_time", models.DateField()),
+                ("date", models.DateField()),
             ],
         ),
         migrations.CreateModel(
-            name='User',
+            name="User",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('cpf', models.CharField(max_length=15)),
-                ('registration', models.CharField(max_length=15)),
-                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='api.Course')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("cpf", models.CharField(max_length=15)),
+                ("registration", models.CharField(max_length=15)),
+                (
+                    "course",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="api.Course"
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='Keynote',
+            name="Keynote",
             fields=[
-                ('talk_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='api.Talk')),
+                (
+                    "talk_ptr",
+                    models.OneToOneField(
+                        auto_created=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        parent_link=True,
+                        primary_key=True,
+                        serialize=False,
+                        to="api.Talk",
+                    ),
+                )
             ],
-            bases=('api.talk',),
+            bases=("api.talk",),
         ),
         migrations.CreateModel(
-            name='Workshop',
+            name="Workshop",
             fields=[
-                ('talk_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='api.Talk')),
-                ('donate', models.BooleanField(default=False)),
+                (
+                    "talk_ptr",
+                    models.OneToOneField(
+                        auto_created=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        parent_link=True,
+                        primary_key=True,
+                        serialize=False,
+                        to="api.Talk",
+                    ),
+                ),
+                ("donate", models.BooleanField(default=False)),
             ],
-            bases=('api.talk',),
+            bases=("api.talk",),
         ),
         migrations.AddField(
-            model_name='talk',
-            name='event',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='api.Event'),
+            model_name="talk",
+            name="event",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE, to="api.Event"
+            ),
         ),
     ]
