@@ -4,6 +4,14 @@
 [![TravisCi](https://travis-ci.org/agata-project/azazel.svg?branch=master)](https://travis-ci.org/agata-project/azazel)
 [![Coverage Status](https://coveralls.io/repos/github/agata-project/azazel/badge.svg)](https://coveralls.io/github/agata-project/azazel)
 [![Ebert](https://ebertapp.io/github/agata-project/azazel.svg)](https://ebertapp.io/github/agata-project/azazel)
+[![GitHub issues](https://img.shields.io/github/issues-raw/agata-project/azazel.svg)](https://github.com/agata-project/azazel/issues)
+![GitHub contributors](https://img.shields.io/github/contributors/agata-project/azazel.svg)
+![license](https://img.shields.io/github/license/agata-project/azazel.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/agata-project/azazel.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/agata-project/azazel.svg)
+![PyPI](https://img.shields.io/pypi/v/nine.svg)
+![GitHub stars](https://img.shields.io/github/stars/agata-project/azazel.svg?style=social&label=Stars)
+
 
 ## Description
 
