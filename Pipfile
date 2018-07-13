@@ -16,6 +16,8 @@ django = "*"
 djangorestframework = "*"
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
+gunicorn = "*"
+django-heroku = "*"
 
 [dev-packages]
 pytest = "*"
