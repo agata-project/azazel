@@ -15,6 +15,7 @@ Um webservice para o backend da semana da computação.
 
 * [Environment](#environment)
   * [Dependences](#environment-dependences)
+  * [Init](#environment-init)
   * [Variables](#environment-variables)
 * [Development](#development)
 * [Run](#run)
@@ -29,6 +30,21 @@ Um webservice para o backend da semana da computação.
 * Python 3.6.5
 * pyenv
 * pipenv
+
+### Environment Init
+
+* open shell end load `.env`
+
+```sh
+pipenv shell
+```
+
+* install `python` dependences
+
+```sh
+pipenv install
+pipenv install --dev
+```
 
 ### Environment Variables
 
@@ -45,7 +61,6 @@ pipenv run setupdbtest
 
 ```sh
 pipenv run migrate
-pipenv run createsuperuser
 ```
 
 ## Run
