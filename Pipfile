@@ -22,6 +22,7 @@ pytest = "*"
 python-coveralls = "*"
 pytest-cov = "*"
 "autopep8" = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.6"

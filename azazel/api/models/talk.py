@@ -12,8 +12,10 @@ class Talk(models.Model):
     finish_time = models.DateField()
     date = models.DateField()
 
+
 class Workshop(Talk):
     donate = models.BooleanField(default=False)
+
 
 class Keynote(Talk):
     pass
