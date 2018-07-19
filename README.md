@@ -5,6 +5,7 @@
 ![Azazel](https://img.shields.io/badge/agata--project-azazel-blue.svg)
 ![license](https://img.shields.io/github/license/agata-project/azazel.svg)
 ![PyPI](https://img.shields.io/pypi/v/nine.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/agata-project/azazel.svg)
 
 [![TravisCi](https://travis-ci.org/agata-project/azazel.svg?branch=master)](https://travis-ci.org/agata-project/azazel)
 [![Coverage Status](https://coveralls.io/repos/github/agata-project/azazel/badge.svg)](https://coveralls.io/github/agata-project/azazel)
@@ -12,12 +13,10 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/agata-project/azazel.svg)](https://github.com/agata-project/azazel/issues)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/agata-project/azazel.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/agata-project/azazel.svg)
 ![GitHub contributors](https://img.shields.io/github/contributors/agata-project/azazel.svg)
-![GitHub stars](https://img.shields.io/github/stars/agata-project/azazel.svg?style=social&label=Stars)
+![GitHub stars](https://img.shields.io/github/stars/agata-project/azazel.svg?label=Stars)
 
 </center>
-
 
 ## Description
 
