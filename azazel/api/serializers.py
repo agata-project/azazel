@@ -2,71 +2,43 @@ from .models import Course, Event, User, Talk, Workshop, Keynote, UserTalk
 from rest_framework import serializers
 
 
-class CourseSerializer(serializers.HyperlinkedModelSerializer):
+class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
-        fields = ["name", "initials"]
+        fields = "__all__"
 
 
-class EventSerializer(serializers.HyperlinkedModelSerializer):
+class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
-        fields = ["name", "course"]
+        fields = "__all__"
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["name", "course", "email", "cpf", "registration"]
+        fields = "__all__"
 
 
-class TalkSerializer(serializers.HyperlinkedModelSerializer):
+class TalkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Talk
-        fields = [
-            "event",
-            "name",
-            "speaker",
-            "description",
-            "local",
-            "init_time",
-            "finish_time",
-            "date",
-        ]
+        fields = "__all__"
 
 
-class WorkshopSerializer(serializers.HyperlinkedModelSerializer):
+class WorkshopSerializer(serializers.ModelSerializer):
     class Meta:
         model = Workshop
-        fields = [
-            "event",
-            "name",
-            "speaker",
-            "description",
-            "local",
-            "init_time",
-            "finish_time",
-            "date",
-            "donate",
-        ]
+        fields = "__all__"
 
 
-class KeynoteSerializer(serializers.HyperlinkedModelSerializer):
+class KeynoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Keynote
-        fields = [
-            "event",
-            "name",
-            "speaker",
-            "description",
-            "local",
-            "init_time",
-            "finish_time",
-            "date",
-        ]
+        fields = "__all__"
 
 
-class UserTalkSerializer(serializers.HyperlinkedModelSerializer):
+class UserTalkSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserTalk
-        fields = ["talk", "user"]
+        fields = "__all__"
